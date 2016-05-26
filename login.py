@@ -2,6 +2,11 @@ import requests;
 import getpass;
 #from bs4 import BeautifulSoup;
 
+'''
+Func : getSession
+Input: str(username) , str(password)
+Output: None | <session_object>
+'''
 def getSession(username, password):
 	login_data = {"username":username,"password":password};
 	moodle_session = requests.Session();
