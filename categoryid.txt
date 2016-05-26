@@ -1,0 +1,1 @@
+{"Computer Science":{"First Year":"14","Second Year":"15","Third Year":"16","BE":"17"},"IT":{"First Year":"19","Second Year":"20","Third Year":"21","BE":"22"},"Mechanical":{"First Year":"41","Second Year":"42","Third Year":"43","BE":"44"},"EXTC":{"First Year":"9","Second Year":"10","Third Year":"11","BE":"12"}}

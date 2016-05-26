@@ -19,15 +19,18 @@ def getSession(username, password):
 	if response.status_code == 200:
 		print("Successful connection to site... [Received 200]");
 		if response.url is "https://moodle.dbit.in/login/index.php":
-			print("ERROR: Bad Login!");
+			print("ERROR: Bad Login! "+response.url+" ...");
 			return(None);
 		elif response.url == "https://moodle.dbit.in/":
 			print("logged in as: "+username);
 			return(moodle_session);
 
-
-
-if __name__ == "__main__":
+'''
+Func: login
+Input: None
+Output: <session_object>
+'''
+def login():
 	m_sess = None;
 	username = input("Username: ");
 	password = getpass.getpass("Password: ");
@@ -37,4 +40,4 @@ if __name__ == "__main__":
 		username = input("Username: ");
 		password = getpass.getpass("Password: ");
 		m_sess = getSession(username,password);
-	print("Exiting");
+	return(m_sess);
