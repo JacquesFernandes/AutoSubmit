@@ -26,6 +26,10 @@ if __name__ == "__main__":
 	m_sess = None;
 	username = input("Username: ");
 	password = getpass.getpass("Password: ");
+	m_sess = getSession(username,password);
 	while m_sess is None:
+		print("\n\nBad Login!\n\n");
+		username = input("Username: ");
+		password = getpass.getpass("Password: ");
 		m_sess = getSession(username,password);
 	print("Exiting");
